@@ -23,7 +23,7 @@ const DetailedProduct = (props) => {
     { id: "3", title: "Customer Review", checked: "" },
     { id: "4", title: "Delievery Info", checked: "" },
   ]);
-  const [currentOption, setCurrentOption] = useState("1");
+  const [currentOption, setCurrentOption] = useState("");
   useEffect(() => {
     console.log(optionArray);
   });
