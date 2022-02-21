@@ -50,3 +50,7 @@ main {
 #products div {
   margin-top: 40px;
 }
+#main {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}

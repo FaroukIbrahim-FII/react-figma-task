@@ -5,12 +5,28 @@ import useResources from "../hooks/useResources";
 
 function Products() {
   const products = [
-    { id: 1, imgsrc: "/blueBag.png", imgName: "Blue Bage" },
-    { id: 2, imgsrc: "/blueShirt.png", imgName: "Blue Shirt" },
-    { id: 3, imgsrc: "/brownJacket.png", imgName: "Brown Jacket" },
-    { id: 4, imgsrc: "/letherWallet.png", imgName: "Lether Wallet" },
-    { id: 5, imgsrc: "/shorts.png", imgName: "Shorts" },
-    { id: 6, imgsrc: "/toxedo.png", imgName: "Toxedo" },
+    {
+      id: 1,
+      imgsrc: "http://localhost:3000/blueBag.png",
+      imgName: "Blue Bage",
+    },
+    {
+      id: 2,
+      imgsrc: "http://localhost:3000/blueShirt.png",
+      imgName: "Blue Shirt",
+    },
+    {
+      id: 3,
+      imgsrc: "http://localhost:3000/brownJacket.png",
+      imgName: "Brown Jacket",
+    },
+    {
+      id: 4,
+      imgsrc: "http://localhost:3000/letherWallet.png",
+      imgName: "Lether Wallet",
+    },
+    { id: 5, imgsrc: "http://localhost:3000/shorts.png", imgName: "Shorts" },
+    { id: 6, imgsrc: "http://localhost:3000/toxedo.png", imgName: "Toxedo" },
   ];
   const { favList, cartList, addToCart, addToFav } = useResources();
   useEffect(() => {
