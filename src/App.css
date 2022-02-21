@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+main {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding: 50px;
+}
+
+#products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#products div {
+  margin-top: 40px;
+}

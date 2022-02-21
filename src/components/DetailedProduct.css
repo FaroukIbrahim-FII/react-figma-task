@@ -1,0 +1,264 @@
+#upperdiv {
+  height: 500px;
+  border: 1px solid white;
+  background-color: white;
+}
+.value-button {
+  display: inline-block;
+  border: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 11px 0;
+  background: #eee;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.value-button:hover {
+  cursor: pointer;
+}
+
+form #decrease {
+  margin-right: -4px;
+  border-radius: 8px 0 0 8px;
+}
+
+form #increase {
+  margin-left: -4px;
+  border-radius: 0 8px 8px 0;
+}
+
+form #input-wrap {
+  margin: 0px;
+  padding: 0px;
+}
+
+input#number {
+  text-align: center;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 40px;
+  width: 50px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#productimage {
+  float: left;
+  position: relative;
+  width: 490px;
+  height: 420px;
+  background-color: #f7f7f7;
+}
+#imageright {
+  position: relative;
+  float: right;
+  width: 500px;
+  text-align: left;
+}
+#imageright h3:first-child {
+  font-weight: 600;
+}
+#imageright mark {
+  font-weight: 300;
+  background-color: white;
+  color: gray;
+}
+#imageright td:nth-child(1) {
+  width: 70px;
+  color: gray;
+}
+#imageright hr {
+  display: block;
+  overflow: hidden;
+  /* border-style: inset; */
+  /* border-width: 0.5px; */
+  /* border-color: gray; */
+  height: 1px;
+  /* background-color: #ccc; */
+  border: none;
+  background-color: #e0e0e0;
+  width: 80%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  /* background-color: gray; */
+}
+#formdiv {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#formdiv select {
+  display: inline-block;
+  border: 1px solid #ddd;
+  margin: 0px;
+  width: 134px;
+  height: 44px;
+  text-align: center;
+  /* vertical-align: middle; */
+  padding: 11px 5px;
+  background: #eee;
+  border-radius: 8px;
+  /* padding-left: 5px; */
+  margin-left: 10px;
+  margin-right: 20px;
+
+  /* -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; */
+}
+#formdiv select option {
+  text-align: left;
+}
+
+#formdiv select,
+label {
+  display: block;
+  text-align: center;
+}
+#btnsdiv {
+  margin: 10px;
+}
+#buybtn {
+  background: #ff9017;
+  /* base-color/orange */
+  border: 1px solid #ff9017;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 10px 20px 10px 20px;
+  margin-right: 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: -0.1px;
+
+  /* base-color/white */
+  color: #ffffff;
+}
+#addtocartbtn {
+  background: #0d6efd;
+  /* base-color/blue */
+  border: 1px solid #0d6efd;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 10px 20px 10px 20px;
+  margin-right: 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.1px;
+
+  /* base-color/white */
+  color: #ffffff;
+}
+#addtocartbtn svg {
+  margin-right: 2px;
+}
+#belowdiv {
+  background-color: #f7f7f7;
+  /* height: 500px; */
+  padding: 50px;
+}
+#belowcontainer {
+  position: relative;
+  top: 10%;
+  margin-bottom: 10%;
+  height: 80%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: white;
+  border-radius: 8px;
+}
+#belowcontainer ul {
+  /* margin-left: 2%; */
+  margin-bottom: 0%;
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+#belowcontainer ul li {
+  list-style: none;
+  margin-top: 30px;
+  padding-bottom: 10px;
+  margin-right: 50px;
+  /* border-bottom: 1px solid gray; */
+}
+#belowcontainer ul li:active {
+  border-bottom: 2px solid blue;
+  color: blue;
+  font-weight: 600;
+}
+#belowcontainer hr {
+  margin-top: -1px;
+}
+#belowcontainer p {
+  text-align: left;
+  padding: 30px;
+  padding-right: 60px;
+}
+/* #firstoption:target {
+  border-bottom: 2px solid blue;
+  color: blue;
+  font-weight: 600;
+} */
+#btnControl1 {
+  display: none;
+}
+
+#btnControl1:checked + li > label {
+  border-bottom: 2px solid blue;
+  color: blue;
+  font-weight: 600;
+}
+#btnControl2 {
+  display: none;
+}
+
+#btnControl2:checked + label {
+  border-bottom: 2px solid blue;
+  color: blue;
+  font-weight: 600;
+}
+#btnControl3 {
+  display: none;
+}
+
+#btnControl3:checked + label {
+  border-bottom: 2px solid blue;
+  color: blue;
+  font-weight: 600;
+}
+#btnControl4 {
+  display: none;
+}
+
+#btnControl4:checked + label {
+  border-bottom: 2px solid blue;
+  color: blue;
+  font-weight: 600;
+}
+#active {
+  border-bottom: 2px solid blue;
+  color: blue;
+  font-weight: 600;
+}
