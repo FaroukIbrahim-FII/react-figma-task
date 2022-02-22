@@ -50,3 +50,11 @@ main {
 #products div {
   margin-top: 40px;
 }
+#main {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+#filterdiv {
+  margin-top: 40px;
+  margin-right: 20px;
+}

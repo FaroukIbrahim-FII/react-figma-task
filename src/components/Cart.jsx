@@ -4,13 +4,14 @@ import { useSelector } from "react-redux";
 function Cart(props) {
   const cartList = useSelector((state) => state.cartList);
 
-  if (cartList.length == 0)
+  if (cartList.length == 0) {
     return <p id="warning">There is no item in your cart</p>;
+  }
   return (
     <div id="favorites">
-      {cartList.map((item) => {
+      {cartList[0].map((item) => {
         return (
-          <div>
+          <div key={item.id}>
             <div key={item.name} id="article">
               <img src={item.imgSrc} alt={item.imgName} />
               <h3>$99.50</h3>
