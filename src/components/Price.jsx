@@ -1,8 +1,8 @@
 import React from "react";
 import { Slider } from "@mui/material";
-import "./CSS/Price.css";
 import PriceForm from "./common/PriceForm";
 import usePriceFunctions from "../hooks/usePriceFunctions";
+import "./CSS/Price.css";
 
 function Price(props) {
   const {

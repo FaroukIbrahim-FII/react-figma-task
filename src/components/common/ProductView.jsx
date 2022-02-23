@@ -1,9 +1,9 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import QuantityForm from "./QuantityForm";
-import { add_cart_item } from "../../redux/actions/cartActions";
 import CartIcon from "./CartIcon";
+import QuantityForm from "./QuantityForm";
 import { useDetailProducts } from "./useDetailProducts";
+import { add_cart_item } from "../../redux/actions/cartActions";
 
 function ProductView() {
   const { value, product, table, increaseValue, decreaseValue } =

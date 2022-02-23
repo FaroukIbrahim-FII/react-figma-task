@@ -1,6 +1,6 @@
 import React from "react";
-import "./CSS/FilteringComponent.css";
 import { useConditions } from "./common/useConditions";
+import "./CSS/FilteringComponent.css";
 
 function Condition() {
   const { conditions } = useConditions();

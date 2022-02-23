@@ -1,6 +1,6 @@
 import React from "react";
 
-function CartIcon(props) {
+function CartIcon() {
   return (
     <svg
       width="13"

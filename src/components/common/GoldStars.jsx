@@ -1,6 +1,6 @@
 import React from "react";
 
-function GoldStars(props) {
+function GoldStars() {
   return (
     <svg
       width="20"

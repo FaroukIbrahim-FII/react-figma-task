@@ -1,8 +1,8 @@
 import React from "react";
 import GoldStars from "./common/GoldStars";
 import EmptyStar from "./common/EmptyStar";
-import "./CSS/StarRating.css";
 import { useStarsDependencies } from "./common/starsDependencies";
+import "./CSS/StarRating.css";
 
 const StarRating = () => {
   const { starPattern } = useStarsDependencies();

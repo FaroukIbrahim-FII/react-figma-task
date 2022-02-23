@@ -1,6 +1,6 @@
 import React from "react";
 
-function LoremText(props) {
+function LoremText() {
   return (
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

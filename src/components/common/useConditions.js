@@ -1,7 +1,6 @@
-import React from "react";
 import { useDispatch } from "react-redux";
-import { filter_products } from "../../redux/actions/disProdsActions";
 import { allProducts } from "./allProducts";
+import { filter_products } from "../../redux/actions/disProdsActions";
 
 export function useConditions(props) {
   const conditions = [

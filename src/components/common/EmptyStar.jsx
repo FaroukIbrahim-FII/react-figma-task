@@ -1,6 +1,6 @@
 import React from "react";
 
-function EmptyStar(props) {
+function EmptyStar() {
   return (
     <svg
       width="20"

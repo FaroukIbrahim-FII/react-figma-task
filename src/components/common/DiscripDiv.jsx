@@ -1,7 +1,7 @@
 import React from "react";
 import LoremText from "./LoremText";
 
-function DetailedDiv({ optionArray, changeCurrentOption, currentOption }) {
+function DiscripDiv({ optionArray, changeCurrentOption, currentOption }) {
   return (
     <div id="belowdiv">
       <div id="belowcontainer">
@@ -32,4 +32,4 @@ function DetailedDiv({ optionArray, changeCurrentOption, currentOption }) {
   );
 }
 
-export default DetailedDiv;
+export default DiscripDiv;

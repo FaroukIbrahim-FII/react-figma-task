@@ -1,9 +1,9 @@
 import React from "react";
-import "./CSS/Product.css";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
 import { add_fav_item } from "../redux/actions/favActions";
 import { add_cart_item } from "../redux/actions/cartActions";
-import { useDispatch } from "react-redux";
+import "./CSS/Product.css";
 
 function Product({ imgSrc, name, addToFav, addToCart, product }) {
   const dispach = useDispatch();

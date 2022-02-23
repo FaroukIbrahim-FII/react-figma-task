@@ -1,8 +1,8 @@
 import React from "react";
-import "./CSS/DetailedProduct.css";
 import { useDetailProducts } from "./common/useDetailProducts";
-import DetailedDiv from "./common/DetailedDiv";
+import DiscripDiv from "./common/DiscripDiv";
 import ProductView from "./common/ProductView";
+import "./CSS/DetailedProduct.css";
 
 const DetailedProduct = (props) => {
   const {
@@ -25,7 +25,7 @@ const DetailedProduct = (props) => {
         value={value}
         increaseValue={increaseValue}
       />
-      <DetailedDiv
+      <DiscripDiv
         optionArray={optionArray}
         changeCurrentOption={changeCurrentOption}
         currentOption={currentOption}
