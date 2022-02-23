@@ -17,10 +17,7 @@ function usePriceFunctions() {
   } = useChangeValue();
 
   function filterOnPrice() {
-    const filteredProducts = products.filter((item) => {
-      if (item.price >= value[0] && item.price <= value[1]) return true;
-    });
-    dispatch(filter_products(filteredProducts));
+    dispatch(filter_products(null, value, []));
   }
   return {
     changeLeftValue,

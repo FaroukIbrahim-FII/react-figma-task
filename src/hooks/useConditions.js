@@ -13,10 +13,7 @@ export function useConditions(props) {
   const dispatch = useDispatch();
   const getValue = (e) => {
     const value = e.target.value;
-    const filteredProducts = products.filter(
-      (item) => item.condition === value
-    );
-    dispatch(filter_products(filteredProducts));
+    dispatch(filter_products(value, [], []));
   };
 
   return {

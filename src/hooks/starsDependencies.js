@@ -34,10 +34,7 @@ export function useStarsDependencies(props) {
     const finalRatingArray = newRatingStars.map((item) => {
       if (item.status === true) return item.id;
     });
-    const filteredArray = products.filter((item) => {
-      if (finalRatingArray.includes(item.rate)) return true;
-    });
-    dispatch(filter_products(filteredArray));
+    dispatch(filter_products(null, [], finalRatingArray));
   }
 
   return {
