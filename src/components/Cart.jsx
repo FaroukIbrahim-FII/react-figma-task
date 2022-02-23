@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import "./CSS/favorite.css";
 
 function Cart(props) {
   const cartList = useSelector((state) => state.cartList);
@@ -9,7 +10,7 @@ function Cart(props) {
   }
   return (
     <div id="favorites">
-      {cartList[0].map((item) => {
+      {cartList.map((item) => {
         return (
           <div key={item.id}>
             <div key={item.name} id="article">

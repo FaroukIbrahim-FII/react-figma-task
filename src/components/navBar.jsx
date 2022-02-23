@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./navBar.css";
+import "./CSS/navBar.css";
 import Logo from "../assets/Logo";
-import SearchBar from "../assets/SerachBar";
 
 function NavBar(props) {
   const doSubmit = (e) => {

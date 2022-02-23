@@ -1,12 +1,13 @@
 import React from "react";
-import "./Product.css";
+import "./CSS/Product.css";
 import { Link } from "react-router-dom";
-import { add_fav_item } from "../reduxComponent/actions/favActions";
-import { add_cart_item } from "../reduxComponent/actions/cartActions";
+import { add_fav_item } from "../redux/actions/favActions";
+import { add_cart_item } from "../redux/actions/cartActions";
 import { useDispatch } from "react-redux";
 
 function Product({ imgSrc, name, addToFav, addToCart, product }) {
   const dispach = useDispatch();
+
   return (
     <article id="article">
       <Link to={`/products/${product.id}`}>

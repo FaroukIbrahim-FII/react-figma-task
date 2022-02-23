@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Condition from "./Condition";
 import Price from "./Price";
 import StarRating from "./StarRating";
-import "./FilteringComponent.css";
+import "./CSS/FilteringComponent.css";
 
 function FilteringComponent(props) {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import "./favorite.css";
+import "./CSS/favorite.css";
 
 function Favorite(props) {
   const favList = useSelector((state) => state.favList);
