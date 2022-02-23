@@ -1,5 +1,5 @@
 import React from "react";
-import { useConditions } from "./common/useConditions";
+import { useConditions } from "../hooks/useConditions";
 import "./CSS/FilteringComponent.css";
 
 function Condition() {

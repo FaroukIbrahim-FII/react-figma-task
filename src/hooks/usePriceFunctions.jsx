@@ -1,7 +1,6 @@
-import React, { Component, useState, useEffect } from "react";
 import { filter_products } from "../redux/actions/disProdsActions";
 import { useSelector, useDispatch } from "react-redux";
-import { usePrices } from "../components/common/getMinAndMaxPrice";
+import { usePrices } from "./getMinAndMaxPrice";
 import { useChangeValue } from "../components/common/priceChangeValue";
 
 function usePriceFunctions() {

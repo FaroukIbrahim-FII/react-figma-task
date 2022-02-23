@@ -1,5 +1,5 @@
 import React from "react";
-import { useDetailProducts } from "./common/useDetailProducts";
+import { useDetailProducts } from "../hooks/useDetailProducts";
 import DiscripDiv from "./common/DiscripDiv";
 import ProductView from "./common/ProductView";
 import "./CSS/DetailedProduct.css";

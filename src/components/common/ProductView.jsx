@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import CartIcon from "./CartIcon";
 import QuantityForm from "./QuantityForm";
-import { useDetailProducts } from "./useDetailProducts";
+import { useDetailProducts } from "../../hooks/useDetailProducts";
 import { add_cart_item } from "../../redux/actions/cartActions";
 
 function ProductView() {
