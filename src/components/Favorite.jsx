@@ -1,20 +1,18 @@
-import { React, useEffect } from "react";
-import useResources from "../hooks/useResources";
+import React from "react";
 import { useSelector } from "react-redux";
-import "./favorite.css";
+import "./CSS/favorite.css";
 
 function Favorite(props) {
   const favList = useSelector((state) => state.favList);
-  useEffect(() => {
-    console.log(favList.length == 0);
-  });
+
   if (favList.length == 0)
     return <p id="warning">There is no item in the favorite</p>;
+
   return (
     <div id="favorites">
       {favList.map((item) => {
         return (
-          <div>
+          <div key={item.id}>
             <div key={item.name} id="article">
               <img src={item.imgSrc} alt={item.imgName} />
               <h3>$99.50</h3>

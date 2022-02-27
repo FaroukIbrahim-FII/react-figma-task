@@ -1,5 +1,4 @@
-import { faAssistiveListeningSystems } from "@fortawesome/free-solid-svg-icons";
-import { React, useState } from "react";
+import { useState } from "react";
 
 function useResources(props) {
   const [favList, setFavList] = useState([]);

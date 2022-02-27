@@ -5,6 +5,7 @@ const cartReducer = (state = [], action) => {
     case ADD_CART_ITEM:
       const oldState = [...state];
       const newState = [...oldState, action.payload];
+      console.log(newState);
       return newState;
     default:
       return state;

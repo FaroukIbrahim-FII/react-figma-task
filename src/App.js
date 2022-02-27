@@ -5,8 +5,7 @@ import Favorite from "./components/Favorite";
 import Products from "./components/Products";
 import { Routes, Route, Redirect } from "react-router-dom";
 import { render } from "@testing-library/react";
-import Resources from "./context/Resources";
-import { createStore } from "redux";
+
 import DetailedProduct from "./components/DetailedProduct";
 
 function App() {
