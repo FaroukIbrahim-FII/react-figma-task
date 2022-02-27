@@ -19,13 +19,11 @@ export function getFilteredData(
         return true;
     });
   }
-  console.log("starArray: ", starArray);
   if (starArray.length != 0) {
     filteredProducts = filteredProducts.filter((item) => {
       if (starArray.includes(item.rate)) return true;
     });
   }
-  console.log("after all", filteredProducts);
 
   return filteredProducts;
 }

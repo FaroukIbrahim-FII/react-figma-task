@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import { useDispatch } from "react-redux";
 import { allProducts } from "../components/common/allProducts";
 import { filter_products } from "../redux/actions/disProdsActions";
@@ -23,20 +23,22 @@ export function useStarsDependencies(props) {
     [1, 0, 0, 0, 0],
   ];
 
-  function handleChange(e) {
-    let newRatingStars = [...ratingStars];
-    for (let ratingStar of newRatingStars) {
-      if (ratingStar.id === +e.target.name + 1) {
-        ratingStar.status = e.target.checked;
+  const handleChange = useCallback(
+    (e) => {
+      let newRatingStars = [...ratingStars];
+      for (let ratingStar of newRatingStars) {
+        if (ratingStar.id === +e.target.name + 1) {
+          ratingStar.status = e.target.checked;
+        }
       }
-    }
-    setRatingStars(newRatingStars);
-    const finalRatingArray = newRatingStars.map((item) => {
-      if (item.status === true) return item.id;
-    });
-    dispatch(filter_products(null, [], finalRatingArray));
-  }
-
+      setRatingStars(newRatingStars);
+      const finalRatingArray = newRatingStars.map((item) => {
+        if (item.status === true) return item.id;
+      });
+      dispatch(filter_products(null, [], finalRatingArray));
+    },
+    [ratingStars]
+  );
   return {
     starPattern,
     handleChange,

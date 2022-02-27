@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import CartIcon from "./CartIcon";
+import { ReactComponent as CartIcon } from "../../assets/cartIcon.svg";
 import QuantityForm from "./QuantityForm";
 import { useDetailProducts } from "../../hooks/useDetailProducts";
 import { add_cart_item } from "../../redux/actions/cartActions";

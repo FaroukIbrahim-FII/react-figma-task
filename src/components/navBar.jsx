@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/Logo";
-import PersonSVG from "./common/PersonSVG";
-import FavSVG from "./common/FavSVG";
-import CartSVG from "./common/CartSVG";
+import { ReactComponent as PersonSVG } from "../assets/personImage.svg";
+import { ReactComponent as FavSVG } from "../assets/favImage.svg";
+import { ReactComponent as CartSVG } from "../assets/cartImge.svg";
 import NavSearch from "./common/NavSearch";
 import "./CSS/navBar.css";
 

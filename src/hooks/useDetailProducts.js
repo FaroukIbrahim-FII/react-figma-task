@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 
@@ -9,7 +9,10 @@ export function useDetailProducts(props) {
   const [currentOption, setCurrentOption] = useState("1");
   const [value, setValue] = useState(1);
 
-  const product = products.find((item) => item.id == +id.id);
+  const product = useMemo(
+    () => products.find((item) => item.id == +id.id),
+    [products]
+  );
   const optionArray = [
     { id: "1", title: "Overview", checked: "" },
     { id: "2", title: "Specification", checked: "" },

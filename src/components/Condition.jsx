@@ -3,8 +3,7 @@ import { useConditions } from "../hooks/useConditions";
 import "./CSS/FilteringComponent.css";
 
 function Condition() {
-  const { conditions } = useConditions();
-  const { getValue } = useConditions();
+  const { conditions, getValue } = useConditions();
 
   return (
     <form id="filterform" onChange={getValue}>
